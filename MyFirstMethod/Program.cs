@@ -11,10 +11,16 @@ namespace MyFirstMethod
             }
         }
 
+        private static async void CountToN(int n){
+            for(int i = 1; i <= n; i++){
+                Console.WriteLine(i);
+            }
+        }
+
         static void Main(string[] args)
         {
-            CountTo10();
-            CountTo10();
+            CountToN(5);
+            CountToN(15);
         }
     }
 }
