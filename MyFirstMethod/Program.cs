@@ -26,13 +26,27 @@ namespace MyFirstMethod
         }
 
         /// <summary>
+        /// Count between 2 numbers
+        /// </summary>
+        /// <param name="n1">beggining number</param>
+        /// <param name="n2">ending number</param>
+        /// <returns>None</returns>
+        private static async void CountToN(int n1, int n2){
+            for(int i=n1; i <= n2; i++){
+                Console.WriteLine(i);
+            }
+        }
+
+        /// <summary>
         /// Main with summon of other methods
         /// </summary>
         /// <param name="args">Received Arguments</param>
         static void Main(string[] args)
         {
             CountToN(5);
-            CountToN(15);
+            CountToN(14, 20);
         }
+
+        
     }
 }
